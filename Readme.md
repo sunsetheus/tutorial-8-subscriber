@@ -1,0 +1,10 @@
+#### a. what is amqp?
+AMQP singkatan dari "Advanced Message Queuing Protocol". Ini adalah sebuah protokol komunikasi yang digunakan untuk mengirim dan menerima pesan antara aplikasi atau layanan. AMQP dirancang untuk mendukung sistem-sistem yang membutuhkan pertukaran pesan yang andal dan efisien, terutama dalam lingkungan yang terdistribusi dan skala besar.
+
+Dengan AMQP, aplikasi dapat mengirim pesan ke antrian (queue) di server pesan (message broker) untuk dikonsumsi oleh aplikasi lainnya. Hal ini memungkinkan komunikasi yang longgar terkait waktu dan tidak terikat secara langsung antara aplikasi, sehingga memungkinkan untuk skenario seperti pengiriman pesan asinkron, antrian pesan, dan pertukaran pesan yang andal.
+
+AMQP memiliki peran penting dalam arsitektur berbasis mikro dan sistem terdistribusi, serta digunakan secara luas dalam implementasi layanan pesan (message-oriented middleware) dan teknologi yang membutuhkan komunikasi antar aplikasi.
+
+#### b. what it means? guest:guest@localhost:5672 , what is the first Guest, and what is the second guest, and what is localhost:5672 is for? 
+guest:guest: Ini merupakan kombinasi nama pengguna (username) dan kata sandi (password) yang digunakan untuk autentikasi saat terhubung ke server RabbitMQ. Dalam kasus ini, "guest" digunakan sebagai nama pengguna dan kata sandi. Ini adalah kombinasi bawaan yang diberikan oleh RabbitMQ untuk penggunaan dalam pengembangan dan pengujian. Namun, dalam lingkungan produksi, sebaiknya gunakan kredensial yang lebih aman.
+localhost:5672: Ini adalah alamat server RabbitMQ yang akan dihubungi. "localhost" menunjukkan bahwa server RabbitMQ berjalan pada mesin lokal (komputer tempat Anda menjalankan kode), dan "5672" adalah nomor port standar yang digunakan oleh RabbitMQ untuk menerima koneksi. Port 5672 adalah port default untuk protokol AMQP (Advanced Message Queuing Protocol) yang digunakan oleh RabbitMQ. Jika RabbitMQ berjalan di mesin yang berbeda atau menggunakan port yang berbeda, Anda harus mengganti "localhost:5672" dengan alamat dan port yang sesuai.
